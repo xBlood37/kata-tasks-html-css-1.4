@@ -157,11 +157,13 @@ button {
 .popup-nav__link:hover::before {
   display: inline-block;
   position: absolute;
-  left: 0.2px;
+  left: -2px;
   content: ' ';
-  width: 4px;
+  width: 6px;
   height: 32px;
   background-color: rgba(255, 62, 121, 1);
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
 }
 .popup-nav__link:hover {
   padding-left: 50px;
