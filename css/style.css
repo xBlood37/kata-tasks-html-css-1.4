@@ -194,9 +194,9 @@ button {
 .languages__button {
   transition: 0.5s ease-in-out;
 }
-
 /* popup window */
 
+/* main */
 .menu {
   display: flex;
   align-items: center;
@@ -300,13 +300,16 @@ button {
 .nav__link {
   transition: 0.1s ease-in-out;
 }
-
 /* закоментированный код ниже для того что бы было как на макете */
 /* .nav__link_active {
   background: #ffffff;
   border: 1px solid rgba(255, 62, 121, 0.2);
   border-radius: 6px;
 } */
+.nav__link_style {
+  text-decoration: none;
+  color: #666;
+}
 .nav__link_block {
   display: flex;
 }
@@ -325,7 +328,6 @@ button {
 .content {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
 }
 @media screen and (min-width: 500px) {
   .content {
@@ -370,7 +372,6 @@ button {
     display: block;
   }
 }
-
 @media screen and (min-width: 500px) {
   .info__text_block {
     display: block;
