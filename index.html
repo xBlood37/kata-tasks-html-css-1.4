@@ -7,85 +7,88 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="./img/group.svg" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>CPS ремонт</title>
   </head>
   <body>
+    <!-- burger menu -->
+    <aside class="burger">
+      <header class="header"></header>
+    </aside>
+    <!-- burger menu -->
     <!-- main block -->
     <header class="header">
       <div class="menu">
-        <button class="menu__item menu__item_open">
-          <img src="./img/icon.png" alt="icon" class="menu__icon" />
+        <button class="button">
+          <img src="./img/burger.svg" alt="icon" />
         </button>
-        <img class="menu__divider menu__divider_block" src="./img/divider.svg" alt="divider" />
-        <a class="menu__link" href="#">
-          <img src="./img/group.svg" alt="group" class="menu__icon" />
+        <img class="divider divider--block" src="./img/divider.svg" alt="divider" />
+        <a class="link" href="#">
+          <img src="./img/group.svg" alt="group" />
         </a>
-        <button class="menu__item menu__item_block">
-          <img src="./img/call.png" alt="call" class="menu__icon" />
+        <button class="button button--block">
+          <img src="./img/call.svg" alt="call" />
         </button>
-        <button class="menu__item menu__item_block">
-          <img src="./img/chat.png" alt="chat" class="menu__icon" />
+        <button class="button button--block">
+          <img src="./img/chat.svg" alt="chat" />
         </button>
-        <button class="menu__item menu__item_block">
-          <img src="./img/profile.png" alt="profile" class="menu__icon" />
+        <button class="button button--block">
+          <img src="./img/profile.svg" alt="profile" />
         </button>
-        <img class="menu__divider" src="./img/divider.svg" alt="divider" />
-        <button class="menu__item">
-          <img src="./img/repair.png" alt="repair" class="menu__icon" />
+        <img class="divider" src="./img/divider.svg" alt="divider" />
+        <button class="button">
+          <img src="./img/repair.svg" alt="repair" />
         </button>
-        <button class="menu__item">
-          <img src="./img/checklist.png" alt="checklist" class="menu__icon" />
+        <button class="button">
+          <img src="./img/checklist.svg" alt="checklist" />
         </button>
       </div>
     </header>
     <main class="main">
       <div class="title">
-        <h1 class="title__h1">Услуги и сервисы</h1>
-        <span class="title__text title__button_block">Оставить заявку</span>
-        <button class="title__button title__button_block menu__item">
-          <img src="./img/repair.png" alt="repair" class="menu__icon" />
+        <h1 class="h1">Услуги и сервисы</h1>
+        <span class="text block">Оставить заявку</span>
+        <button class="button block">
+          <img src="./img/repair.svg" alt="repair" />
         </button>
-        <span class="title__text title__button_block">Статус ремонта</span>
-        <button class="title__button title__button_block menu__item">
-          <img src="./img/checklist.png" alt="checklist" class="menu__icon" />
+        <span class="text block">Статус ремонта</span>
+        <button class="button block">
+          <img src="./img/checklist.svg" alt="checklist" />
         </button>
       </div>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__link">
-            <a class="nav__link_style" href="#">Ремонтируемые устройства</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Ремонтируемые устройства</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__link_style" href="#">Дополнительные услуги</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Дополнительные услуги</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__link_style" href="#">Цены на услуги</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Цены на услуги</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__link_style" href="#">Адреса сервисных центров</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Адреса сервисных центров</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__link_style" href="#">Специальные цены</a>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Специальные цены</a>
           </li>
-          <li class="nav__link">
-            <a class="nav__link_style nav__link_block" href="#">Отзывы</a>
+          <li class="nav__item nav__item--block">
+            <a class="nav__link" href="#">Отзывы</a>
           </li>
         </ul>
         <ul class="nav__list">
-          <li class="nav__link">
-            <a class="nav__link_style nav__link_block nav__link_laptop" href="#">Отзывы</a>
+          <li class="nav__item nav__item--laptop">
+            <a class="nav__link" href="#">Отзывы</a>
           </li>
         </ul>
       </nav>
-      <div class="content">
+      <div class="content content--margin">
         <div class="info">
-          <p class="info__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+          <p class="about">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
           <br />
-          <p class="info__text info__text_block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-          <p class="info__text info__text_block_laptop">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-          <button class="read-more animate__animated animate__fadeInLeft">
-            <!-- <img src="./img/icon.svg" alt="icon" class="read-more__icon" /> -->
+          <p class="about about--block">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+          <p class="about about--laptop">Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+          <button class="more">
             <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill-rule="evenodd"
@@ -94,10 +97,10 @@
                 fill="#ff3e79"
               />
             </svg>
-            <span class="read-more__span">Читать далее</span>
+            <span class="more__span">Читать далее</span>
           </button>
         </div>
-        <img src="./img/bg.png" alt="background" class="content__background" />
+        <img class="background" src="./img/bg.png" alt="background" />
       </div>
     </main>
 
