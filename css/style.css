@@ -46,6 +46,12 @@ button {
   width: 40px;
   height: 40px;
 }
+.button:hover {
+  background: #9b2649;
+}
+.button {
+  transition: 0.2s ease-in-out;
+}
 
 /* burger menu */
 .burger {
@@ -60,6 +66,59 @@ button {
   overflow-y: auto;
 }
 
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-menu--margin {
+  margin: 24px 24px 40px 24px;
+}
+
+.link--margin {
+  margin-right: auto;
+}
+
+.button--margin {
+  margin-right: 16px;
+}
+
+.nav__list--flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #666;
+}
+.nav__link--decoration {
+  font-family: 'TT Lakes Medium';
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+
+  letter-spacing: -0.2px;
+}
+.nav__link--hover-departure:hover::before {
+  display: inline-block;
+  position: absolute;
+  left: -2px;
+  content: ' ';
+  width: 6px;
+  height: 32px;
+  background-color: rgba(255, 62, 121, 1);
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+}
+.nav__link--hover-departure:hover {
+  padding-left: 50px;
+  opacity: 0.7;
+}
+.nav__link--hover-departure {
+  transition: 0.3s ease-in-out;
+}
+
 /* .email {
   font-size: 16px;
   line-height: 24px;
@@ -72,32 +131,13 @@ button {
   font-weight: 600;
 } */
 
-/* .popup-nav__link:hover::before {
-  display: inline-block;
-  position: absolute;
-  left: -2px;
-  content: ' ';
-  width: 6px;
-  height: 32px;
-  background-color: rgba(255, 62, 121, 1);
-  transition: 0.3s ease-in-out;
-  border-radius: 20px;
-}
-.popup-nav__link:hover {
-  padding-left: 50px;
-  opacity: 0.7;
-}
-.popup-nav__link {
-  transition: 0.3s ease-in-out;
-} */
-
 /* .languages {
   display: flex;
   gap: 7px;
   flex-direction: row;
   flex-wrap: nowrap;
-}
-.button {
+} */
+/* .button {
   opacity: 0.5;
 }
 .button:hover {
@@ -132,7 +172,7 @@ button {
     margin-right: auto;
   }
 
-  .button,
+  .button--margin,
   .divider {
     margin-right: 20px;
   }
@@ -195,7 +235,7 @@ button {
 
 .nav__list {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -210,16 +250,12 @@ button {
   color: #666;
   padding: 10px;
 }
-.nav__item:hover {
+.nav__item--nover-border:hover {
   background: rgba(255, 62, 121, 0.1);
   border-radius: 6px;
 }
 .nav__item {
   transition: 0.1s ease-in-out;
-}
-.nav__link {
-  text-decoration: none;
-  color: #666;
 }
 .nav__item--block {
   display: flex;
