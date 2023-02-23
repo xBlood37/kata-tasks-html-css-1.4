@@ -37,6 +37,13 @@ button {
   background-color: rgba(28, 28, 28, 0);
 }
 
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a {
+  text-decoration: none;
+  color: #666;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -78,6 +85,9 @@ button {
 .link--margin {
   margin-right: auto;
 }
+.link--color {
+  color: #1b1c21;
+}
 
 .button--margin {
   margin-right: 16px;
@@ -118,35 +128,52 @@ button {
 .nav__link--hover-departure {
   transition: 0.3s ease-in-out;
 }
+.nav-margin {
+  margin-bottom: auto;
+}
 
-/* .email {
+.email {
   font-size: 16px;
   line-height: 24px;
+
   letter-spacing: -0.2px;
+
+  color: #1b1c21;
 }
+
+.margin {
+  margin-left: 24px;
+}
+
 .number {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
   font-weight: 600;
-} */
+}
 
-/* .languages {
+.languages {
   display: flex;
   gap: 7px;
   flex-direction: row;
   flex-wrap: nowrap;
-} */
-/* .button {
+}
+.languages__button {
   opacity: 0.5;
 }
-.button:hover {
+.languages__button:hover {
   margin-right: 20px;
   opacity: 1;
 }
-.button {
+.languages__button {
   transition: 0.5s ease-in-out;
-} */
+}
+.languages--margin-top {
+  margin-top: 40px;
+}
+.languages--margin-bottom {
+  margin-bottom: 32px;
+}
 /* burger menu */
 
 /* main */
