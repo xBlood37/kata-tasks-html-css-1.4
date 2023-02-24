@@ -98,10 +98,6 @@ a {
   flex-direction: column;
   gap: 16px;
 }
-.nav__link {
-  text-decoration: none;
-  color: #666;
-}
 .nav__link--decoration {
   font-family: 'TT Lakes Medium';
   font-size: 16px;
