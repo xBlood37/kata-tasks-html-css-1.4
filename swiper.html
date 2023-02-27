@@ -5,46 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body>
     <span class="heading">Ремонт техники различных брендов</span>
     <section class="libary-section swiper" data-mobile="“false”">
       <div class="brands brands--padding swiper-wrapper">
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/lenovo.png" alt="lenovo" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/samsung.png" alt="samsung" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/apple.png" alt="apple" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/bosh.png" alt="bosh" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/hp.png" alt="hp" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/acer.png" alt="acer" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/lenovo.png" alt="lenovo" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
-        <button class="card swiper-slide">
-          <img class="icon" src="./img/lenovo.png" alt="lenovo" />
-          <img class="go" src="./img/go.svg" alt="go button" />
-        </button>
+        <!-- если я зохочу выпилить слайдер то просто удалю div с классом swiper-slide -->
+        <!-- тк карточка это блок -->
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/lenovo.png" alt="lenovo" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/samsung.png" alt="samsung" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/apple.png" alt="apple" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/bosh.png" alt="bosh" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/hp.png" alt="hp" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/acer.png" alt="acer" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/lenovo.png" alt="lenovo" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
+        <div class="swiper-slide">
+          <button class="card">
+            <img class="icon" src="./img/lenovo.png" alt="lenovo" />
+            <img class="go" src="./img/go.svg" alt="go button" />
+          </button>
+        </div>
       </div>
-      <button class="more">
+      <div class="swiper-pagination"></div>
+      <button class="more more--block">
         <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             fill-rule="evenodd"
@@ -57,6 +76,6 @@
       </button>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./scripts.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

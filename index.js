@@ -14,12 +14,22 @@
 //   blockOnDisplay('flex');
 // });
 
-// new Swiper('.swiper', {
-//   breakpoints: {
-//     768: {
-//       enabled: false,
-//       width: 224,
-//       spaceBetween: 24,
-//     },
-//   },
-// });
+new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      enabled: false,
+      spaceBetween: 24,
+    },
+  },
+});
