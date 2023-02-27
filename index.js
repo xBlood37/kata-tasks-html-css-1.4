@@ -13,3 +13,13 @@
 // openPopupButton.addEventListener('click', () => {
 //   blockOnDisplay('flex');
 // });
+
+// new Swiper('.swiper', {
+//   breakpoints: {
+//     768: {
+//       enabled: false,
+//       width: 224,
+//       spaceBetween: 24,
+//     },
+//   },
+// });
