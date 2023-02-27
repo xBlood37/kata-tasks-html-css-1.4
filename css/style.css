@@ -27,6 +27,8 @@ body {
   min-height: 597px;
   overflow-x: hidden;
   font-family: 'TT Lakes Medium';
+  padding: 0;
+  margin: 0;
 }
 
 button {
