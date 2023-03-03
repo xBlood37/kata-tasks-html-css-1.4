@@ -210,7 +210,7 @@ a {
     display: block;
   }
 }
-/* конфликтуют классы */
+
 @media screen and (min-width: 1120px) {
   .header {
     display: none;
@@ -260,7 +260,6 @@ a {
 
 .nav__list {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -384,7 +383,7 @@ a {
 }
 
 /* slider */
-.libary-section {
+.libary {
   min-width: 320px;
   background-color: rgba(248, 248, 248, 1);
 }

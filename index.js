@@ -1,6 +1,3 @@
-// const openPopupButton = document.querySelector('.menu__item_open');
-// const closePopupButton = document.querySelector('.popup-menu__close');
-// const popupAside = document.querySelector('.aside');
 const moreButton = document.querySelector('.more');
 const moreSpan = document.querySelector('.more__span');
 const swiperSlide1 = document.querySelector('#swiper-card-block-1');
@@ -26,26 +23,10 @@ new Swiper('.swiper', {
   },
 });
 
-// function blockOnDisplay(value) {
-//   popupAside.style.display = value;
-// }
-
-// closePopupButton.addEventListener('click', () => {
-//   blockOnDisplay('none');
-// });
-
-// openPopupButton.addEventListener('click', () => {
-//   blockOnDisplay('flex');
-// });
-
 moreButton.addEventListener('click', () => {
   if (moreSpan.textContent === 'Скрыть') {
     moreSpan.textContent = 'Показать все';
-    swiperSlide1.style.display = 'none';
-    swiperSlide2.style.display = 'none';
   } else if (moreSpan.textContent === 'Показать все') {
     moreSpan.textContent = 'Скрыть';
-    swiperSlide1.style.display = 'block';
-    swiperSlide2.style.display = 'block';
   }
 });
