@@ -8,15 +8,15 @@ new Swiper('.swiper', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    425: {
+      slidesPerView: 'auto',
+      spaceBetween: 30,
     },
     500: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
       enabled: false,
-      spaceBetween: 24,
     },
   },
 });
