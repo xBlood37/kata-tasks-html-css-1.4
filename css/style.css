@@ -31,13 +31,6 @@ body {
   margin: 0;
 }
 
-a:active,
-a:hover,
-a {
-  text-decoration: none;
-  color: #666;
-}
-
 .button {
   display: flex;
   align-items: center;
@@ -95,6 +88,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #666;
 }
 .nav__link--decoration {
   font-family: 'TT Lakes Medium';
@@ -154,6 +151,10 @@ a {
 }
 .languages__button {
   opacity: 0.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 .languages__button:hover {
   margin-right: 20px;
@@ -370,10 +371,22 @@ a {
   background-color: rgba(207, 207, 207, 0.2);
   border-radius: 20px;
 }
+.more::before {
+  display: inline-block;
+  margin-bottom: 5px;
+
+  content: '';
+  transform: rotate(45deg);
+  border: solid #ff3e79;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  vertical-align: middle;
+}
 .more {
   transition: 0.1s ease-in-out;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .more {
     display: flex;
   }
@@ -385,7 +398,7 @@ a {
   margin: 0;
   min-width: 320px;
 
-  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 50%);
+  background: linear-gradient(to right, #f8f8f8 30%, #ffffff 100%);
 
   font-family: 'TT Lakes Medium';
   font-size: 16px;
@@ -399,45 +412,67 @@ a {
 .brands {
   background-color: rgba(248, 248, 248, 1);
   min-width: 320px;
+  overflow: hidden;
 }
 .brands__list {
-  display: flex;
-
   padding: 16px;
-
-  text-decoration: none;
+  width: auto;
   color: #666;
+  text-decoration: none;
   list-style-type: none;
   margin: 0;
   min-width: 320px;
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 768px) {
   .brands__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 0fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
     column-gap: 16px;
     row-gap: 16px;
   }
 }
 .brands__card {
-  width: 240px !important;
-
+  cursor: pointer;
   background: #ffffff;
   border: 1px solid #eaeaea;
   border-radius: 6px;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.02);
+}
+@media screen and (max-width: 768px) {
+  .brands__card {
+    width: 240px;
+  }
 }
 .brands__card:hover {
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.1);
   transform: scale(1.01);
   transition: 0.3s;
 }
+.brands__card--block-none {
+  display: none;
+}
 .brands__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+  text-decoration: none;
+  color: #666;
+}
+.brands__link::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  background-image: url(../img/dropdown.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #ff3e79;
+  border-radius: 50%;
+  right: 16px;
+  width: 35px;
+  height: 35px;
 }
 
 .swiper-pagination {

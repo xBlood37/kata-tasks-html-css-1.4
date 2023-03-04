@@ -5,14 +5,12 @@ new Swiper('.swiper', {
   },
   breakpoints: {
     320: {
+      enabled: true,
       slidesPerView: 'auto',
       spaceBetween: 30,
     },
-    425: {
+    768: {
       slidesPerView: 'auto',
-      spaceBetween: 30,
-    },
-    500: {
       enabled: false,
     },
   },
