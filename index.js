@@ -2,8 +2,6 @@ const moreButton = document.querySelector('.more');
 const moreSpan = document.querySelector('.more__span');
 const brandsLink = document.querySelector('.brands__link');
 const brandsId = document.querySelectorAll('#brands-id');
-const brands = document.querySelector('.brands');
-const brandsList = document.querySelector('.brands__list');
 
 brandsLink.addEventListener('click', (e) => e.preventDefault());
 
@@ -29,4 +27,22 @@ moreButton.addEventListener('click', () => {
 
     deleteClass(brandsId, 'brands__card--block-none');
   }
+});
+
+new Swiper('.swiper', {
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      enabled: true,
+      slidesPerView: 'auto',
+      spaceBetween: 30,
+    },
+    768: {
+      enabled: false,
+      slidesPerView: 'auto',
+    },
+  },
 });
